@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  background-color: rgb(253, 253, 253);
+  background-color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -94,8 +94,13 @@ header {
   grid-area: header;
 }
 
-.subtituloGrafico {
-  color: rgb(0, 0, 0);
+.subtitulos, .subtituloindex2, .subtituloindex {
+  color: black;
+  background-color: #ffee5f;
+}
+
+.subtituloindex2 {
+  border: 2px solid #000000;
 }
 
 h2 {
@@ -155,4 +160,10 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
   margin: 3rem;
+}
+
+.mixin {
+  width: 60rem;
+  height: 10rem;
+  background-color: #ffee5f;
 }/*# sourceMappingURL=style.css.map */
