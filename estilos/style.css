@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
 ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 ul li {
   list-style-type: none;
   font-size: 1.5rem;
 }
+
 ul li a {
   text-decoration: none;
   color: #000000;
@@ -31,11 +34,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  padding-bottom: 20rem;
 }
 
 .tracking-in-expand {
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 /* ----------------------------------------------
@@ -44,6 +49,7 @@ body {
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
+
 /**
  * ----------------------------------------
  * animation tracking-in-expand
@@ -54,33 +60,48 @@ body {
     letter-spacing: -0.5em;
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 h1 {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: light;
   font-size: 8rem;
   padding: 2rem;
-  margin: 2rem 1rem 2rem 2rem;
+  margin: 2rem 0.5rem 2rem 2rem;
   grid-area: titulo;
+}
+
+h2 {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 200%;
+  font-weight: bolder;
+  padding: 2rem;
+  margin: 2rem;
 }
 
 main {
@@ -94,25 +115,19 @@ header {
   grid-area: header;
 }
 
-.subtitulos, .subtituloindex2, .subtituloindex {
-  color: black;
-  background-color: #ffee5f;
-}
-
-.subtituloindex2 {
-  border: 2px solid #000000;
-}
-
-h2 {
-  color: #000000;
+.subtituloindex {
   font-family: "Raleway", sans-serif;
-  font-size: 3rem;
-  padding: 2rem;
-  margin: 2rem;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.titulos {
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: medium;
   text-align: left;
@@ -120,7 +135,7 @@ p {
   letter-spacing: 0.1rem;
   word-spacing: 0.3rem;
   padding: 2rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 img {
@@ -128,15 +143,15 @@ img {
   margin: 2rem;
 }
 
-.imagenindex {
-  grid-area: imagenindex;
-}
-
-iframe {
-  padding: 2rem;
-  margin: 2rem;
-  grid-area: iframe;
-}
+.imagenIndex {
+   width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    }
+    img {
+    width: 100%;
+    height: auto;
+    }
 
 .formularios {
   padding: 5rem;
@@ -145,7 +160,10 @@ iframe {
 
 footer {
   background-color: #ffee5f;
+  width: 100%;
   margin-top: 10rem;
+  position: absolute;
+  bottom: 0;
   grid-area: footer;
 }
 
@@ -162,8 +180,3 @@ footer {
   margin: 3rem;
 }
 
-.mixin {
-  width: 60rem;
-  height: 10rem;
-  background-color: #ffee5f;
-}/*# sourceMappingURL=style.css.map */
